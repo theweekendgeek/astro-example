@@ -1,0 +1,20 @@
+<style>
+  /* Scoped class selector within the component */
+  .scoped {
+    font-weight: bold;
+  }
+
+  /* Scoped element selector within the component */
+  h1 {
+    color: red;
+    background: blue;
+    font-size: 300%;
+  }
+
+  :global(h1) {
+    color: blue;
+  }
+</style>
+
+<div class="scoped">Component2.astro: my styling is dependent on the surrounding main tag</div>
+<h1>Component2.astro: my styling is also dependent on the surrounding main tag</h1>

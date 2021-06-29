@@ -1,11 +1,10 @@
 ---
-import PageTemplate from '../components/PageTemplate.astro';
-import PageContent from '../components/PageContent.astro';
+import Component1 from '../components/Component1.astro';
+import Component2 from '../components/Component2.astro';
 ---
 
-<PageTemplate >
-    <PageContent />
-</PageTemplate>
-
-<h1>index.astro If we both are removed, the content PageTemplate.astro loses its styling</h1>
-<div class="scoped">index.astro if we both, the content PageTemplate.astro loses its styling</div>
+<!-- Removing this main tag breaks the styling -->
+<main>
+  <Component1 />
+  <Component2 />
+</main>
